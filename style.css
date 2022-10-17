@@ -36,7 +36,7 @@ body {
     /* Grid */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10fr 10fr 10fr 5fr 6.5fr 12fr;
+    grid-template-rows: 10fr 10fr 10fr 5fr 6.5fr 14fr;
     place-items: center;
 }
 
@@ -92,16 +92,18 @@ h2 {
     grid-template-areas: 
         "a b c" 
         "d e f";
-    place-items: center;
+        justify-items: center;
     border-top: 1px solid var(--dark-gray);
 }
 
 .followers-number {
     grid-area: a;
+    margin-left: 12px;
 }
 
 .followers-word {
     grid-area: d;
+    margin-left: 12px;
 }
 
 .likes-number {
@@ -114,15 +116,16 @@ h2 {
 
 .photos-number {
     grid-area: c;
+    margin-right: 12px;
 }
 
 .photos-word {
     grid-area: f;
+    margin-right: 12px;
 }
 
 h3 {
     font-weight: 700;
-    display: inline-block;
     color: var(--very-dark-desaturated-blue);
     align-self: end;
 }
@@ -130,8 +133,9 @@ h3 {
 h4 {
     font-weight: 400;
     font-size: 12px;
-    align-self: start;
     color: var(--dark-grayish-blue);
+    align-self: start;
+    margin-top: 5px;
 }
 
 .attribution {
