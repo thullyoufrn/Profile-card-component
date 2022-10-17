@@ -38,55 +38,39 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - Acessible HTML5 markup
 - CSS custom properties
-- CSS grid layou
+- CSS grid layout
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This challenge was a good way for me to start my learning and applications of CSS Grid Layout. During the process, I also learned more about backgrounds and overlaying elements.
 
-To see how you can add code snippets, see below:
+This was the most satisfying code I wrote during the challenge because I was stuck trying to build the background. That's why I'm very proud of the following code:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+    /* Background */
+    background-color: var(--dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, 60%;
+    background-position: left -30% top -27rem, right -28% bottom -27rem;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+For my next project, I will study and apply the following concepts:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Flexbox
+- Resposive Layout
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [How to control background images](https://www.youtube.com/watch?v=3T_Jy1CqH9k) - This helped me a lot to build the background of this challenge.
+- [CSS Grid Tutorial](https://youtu.be/RhUuMl3R1PE) - This helped me to understand the main css grid concepts and properties.
+- [How to overlap elements in CSS Grid](https://www.youtube.com/watch?v=HFG3BKOqOlE) - This helped me in the part where it was necessary to place an image on top of another between two css grid cells.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@thullyoufrn](https://www.frontendmentor.io/profile/thullyoufrn)
+- Linkedin - [Thullyo Damasceno](https://www.linkedin.com/in/thullyo-damasceno-375083231)
