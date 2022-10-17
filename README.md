@@ -28,8 +28,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/profile-card-component-using-css-grid-rl4BuTUmOE](https://www.frontendmentor.io/solutions/profile-card-component-using-css-grid-rl4BuTUmOE)
+- Live Site URL: [https://monumental-faloodeh-df064f.netlify.app/](https://monumental-faloodeh-df064f.netlify.app/)
 
 ## My process
 
@@ -66,7 +66,7 @@ For my next project, I will study and apply the following concepts:
 
 ### Useful resources
 
-- [How to control background images](https://www.youtube.com/watch?v=3T_Jy1CqH9k) - This helped me a lot to build the background of this challenge.
+- [How to control background images](https://www.youtube.com/watch?v=3T_Jy1CqH9k) - This helped me a lot to build the background.
 - [CSS Grid Tutorial](https://youtu.be/RhUuMl3R1PE) - This helped me to understand the main css grid concepts and properties.
 - [How to overlap elements in CSS Grid](https://www.youtube.com/watch?v=HFG3BKOqOlE) - This helped me in the part where it was necessary to place an image on top of another between two css grid cells.
 

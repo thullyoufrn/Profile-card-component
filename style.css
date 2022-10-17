@@ -15,7 +15,7 @@
 
 body {
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
     /* Background */
     background-color: var(--dark-cyan);
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
@@ -24,33 +24,23 @@ body {
     background-position: left -30% top -27rem, right -28% bottom -27rem;
     /* Grid */
     display: grid;
-    grid-template: 100vh 50px / 1fr; /* add footer at the end */
-    place-items: center;
+    grid-template: 1fr / 1fr; /* add footer at the end */
+    align-items: center;
+    justify-items: center;
 }
 
-main {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-footer {
-    grid-column: 1 / 2;
-    grid-row: 2 / -1;
-}
-
-.card {
+.card { /* add shadow at the end */
     background-color: white;
-    width: 350px;
+    width: 325px;
     border-radius: 15px;
     /* Grid */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10fr 10fr 10fr 5fr 6.5fr 14fr;
+    grid-template-rows: 10fr 10fr 10fr 4fr 6fr 13fr;
     place-items: center;
-    box-shadow: 0px 20px 30px 20px rgb(0 0 0 / 10%);
 }
 
-/* It makes the overlap possible between the "bubbles" image and the "victor" image */
+/* Overlap - Very important! */
 .card * {
     grid-column: 1 / -1;
 }
@@ -67,17 +57,17 @@ footer {
     grid-row: 2 / 4;    
 }
 
-h1 {
+.title {
     grid-row: 4 / 5;
 }
 
-h1 :first-child {
+.title h1:first-of-type {
     font-weight: 700;
     display: inline-block;
     color: var(--very-dark-desaturated-blue);
 }
 
-h1 :last-child {
+.title h1:last-of-type {
     font-weight: 400;
     display: inline-block;
     color: var(--dark-grayish-blue);
@@ -108,12 +98,12 @@ h2 {
 
 .followers-number {
     grid-area: a;
-    margin-left: 25px;
+    margin-left: 12px;
 }
 
 .followers-word {
     grid-area: d;
-    margin-left: 25px;
+    margin-left: 12px;
 }
 
 .likes-number {
@@ -126,12 +116,12 @@ h2 {
 
 .photos-number {
     grid-area: c;
-    margin-right: 25px;
+    margin-right: 12px;
 }
 
 .photos-word {
     grid-area: f;
-    margin-right: 25px;
+    margin-right: 12px;
 }
 
 h3 {
@@ -145,15 +135,13 @@ h4 {
     font-size: 12px;
     color: var(--dark-grayish-blue);
     align-self: start;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 .attribution {
+    font-size: 11px; 
     text-align: center; 
-    color: white;
-    font-size: 12px;
 }
 .attribution a { 
-    color: var(--very-dark-desaturated-blue);
-    font-size: 12px;
+    color: hsl(228, 45%, 44%); 
 }
