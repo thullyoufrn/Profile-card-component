@@ -38,7 +38,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - Acessible HTML5 markup
 - CSS custom properties
-- CSS grid layout
+- CSS grid layou
 
 ### What I learned
 
