@@ -15,7 +15,7 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     /* Background */
     background-color: var(--dark-cyan);
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
@@ -24,23 +24,33 @@ body {
     background-position: left -30% top -27rem, right -28% bottom -27rem;
     /* Grid */
     display: grid;
-    grid-template: 1fr / 1fr; /* add footer at the end */
-    align-items: center;
-    justify-items: center;
+    grid-template: 100vh 50px / 1fr; /* add footer at the end */
+    place-items: center;
 }
 
-.card { /* add shadow at the end */
+main {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+footer {
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+}
+
+.card {
     background-color: white;
-    width: 325px;
+    width: 350px;
     border-radius: 15px;
     /* Grid */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10fr 10fr 10fr 5fr 6.5fr 14fr;
     place-items: center;
+    box-shadow: 0px 20px 30px 20px rgb(0 0 0 / 10%);
 }
 
-/* Overlap - Very important! */
+/* It makes the overlap possible between the "bubbles" image and the "victor" image */
 .card * {
     grid-column: 1 / -1;
 }
@@ -98,12 +108,12 @@ h2 {
 
 .followers-number {
     grid-area: a;
-    margin-left: 12px;
+    margin-left: 25px;
 }
 
 .followers-word {
     grid-area: d;
-    margin-left: 12px;
+    margin-left: 25px;
 }
 
 .likes-number {
@@ -116,12 +126,12 @@ h2 {
 
 .photos-number {
     grid-area: c;
-    margin-right: 12px;
+    margin-right: 25px;
 }
 
 .photos-word {
     grid-area: f;
-    margin-right: 12px;
+    margin-right: 25px;
 }
 
 h3 {
@@ -135,13 +145,15 @@ h4 {
     font-size: 12px;
     color: var(--dark-grayish-blue);
     align-self: start;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .attribution {
-    font-size: 11px; 
     text-align: center; 
+    color: white;
+    font-size: 12px;
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--very-dark-desaturated-blue);
+    font-size: 12px;
 }
